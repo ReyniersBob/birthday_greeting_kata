@@ -1,6 +1,5 @@
-package it.xpug.kata.birthday_greetings;
+package it.xpug.kata.birthday_greetings.employee;
 
-import java.text.ParseException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -11,7 +10,7 @@ public class Employee {
     private String firstName;
     private String email;
 
-    public Employee(String firstName, String lastName, String birthDate, String email) throws ParseException {
+    public Employee(String firstName, String lastName, String birthDate, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDate = LocalDate.parse(birthDate, DateTimeFormatter.ofPattern("yyyy/MM/dd"));
